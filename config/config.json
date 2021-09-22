@@ -1,0 +1,10 @@
+{
+  "Weapon": {
+    "Mk9x39": true,
+    "SKS9x39": true,
+    "APS9x39": true
+  },
+  "Debug": {
+    "Enable": false
+  }
+}

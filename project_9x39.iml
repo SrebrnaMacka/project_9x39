@@ -4,5 +4,8 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="package" level="project" />
+    <orderEntry type="library" name="api" level="project" />
+    <orderEntry type="library" name="Afrikaans" level="project" />
   </component>
 </module>
