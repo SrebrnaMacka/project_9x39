@@ -5,9 +5,9 @@ module.exports.Mk9x39 = () => {
     const item = database.templates.items;
     const ARUppers = JsonUtil.clone(item["5447a9cd4bdc2dbd208b4567"]._props.Slots[2]._props.filters[0].Filter)
     const VSSAMMO = JsonUtil.clone(item["57838ad32459774a17445cd2"]._props.Chambers[0]._props.filters[0].Filter)
-    const SR3MMags = JsonUtil.clone(item["5a9e81fba2750c00164f6b11"]._props.Slots[7]._props.filters[0].Filter)
-    const VSS20Mags = JsonUtil.clone(item["57838f9f2459774a150289a0"]._props.Slots[7]._props.filters[0].Filter)
-    const VSS10Mags = JsonUtil.clone(item["57838f0b2459774a256959b2"]._props.Slots[7]._props.filters[0].Filter)
+    //const SR3MMags = JsonUtil.clone(item["5a9e81fba2750c00164f6b11"]._props.Slots[7]._props.filters[0].Filter)
+    //const VSS20Mags = JsonUtil.clone(item["57838f9f2459774a150289a0"]._props.Slots[7]._props.filters[0].Filter)
+    //const VSS10Mags = JsonUtil.clone(item["57838f0b2459774a256959b2"]._props.Slots[7]._props.filters[0].Filter)
     const m4a1Id = "5447a9cd7bac2dbg248b4561";
     const mk9clone = "SREBRNA_CMMG_MK9_9x39_ASSAULT_RIFLE";
     const mk9260 = "SREBRNA_mk9_260";
@@ -134,15 +134,15 @@ module.exports.Mk9x39 = () => {
         item[mk47clone]._props.Chambers[0]._props.filters[0].Filter.push(round);
     }
 
-    for (const mag of VSS10Mags) {  //Adding VSS 10 Mags to mod_magazine
-        item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
-    }
-    for (const mag of VSS20Mags) {  //Adding VSS 20 Mags to mod_magazine
-        item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
-    }
-    for (const mag of SR3MMags) {  //Adding SR3M Mags to mod_magazine
-        item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
-    }
+    //for (const mag of VSS10Mags) {  //Adding VSS 10 Mags to mod_magazine
+    //    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
+    //}
+    //for (const mag of VSS20Mags) {  //Adding VSS 20 Mags to mod_magazine
+    //    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
+    //}
+    //for (const mag of SR3MMags) {  //Adding SR3M Mags to mod_magazine
+    //    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
+   //}
 
     const CMMGMDArr =[
         "5d026791d7ad1a04a067ea63", //Fortis Red Brake 7.62x51 muzzle brake for AR-10

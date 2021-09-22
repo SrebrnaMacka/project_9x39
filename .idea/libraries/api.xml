@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="api" type="javaScript">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://G:/SPTarkov 2.0.0/user/mods/Kaiju-api/api.js" />
+      <root url="file://G:/SPTarkov 2.0.0/user/mods/Kaiju-api/package.json" />
+    </SOURCES>
+  </library>
+</component>
