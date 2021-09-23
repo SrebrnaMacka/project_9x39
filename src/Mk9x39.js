@@ -5,10 +5,7 @@ module.exports.Mk9x39 = () => {
     const item = database.templates.items;
     const ARUppers = JsonUtil.clone(item["5447a9cd4bdc2dbd208b4567"]._props.Slots[2]._props.filters[0].Filter)
     const VSSAMMO = JsonUtil.clone(item["57838ad32459774a17445cd2"]._props.Chambers[0]._props.filters[0].Filter)
-    //const SR3MMags = JsonUtil.clone(item["5a9e81fba2750c00164f6b11"]._props.Slots[7]._props.filters[0].Filter)
-    //const VSS20Mags = JsonUtil.clone(item["57838f9f2459774a150289a0"]._props.Slots[7]._props.filters[0].Filter)
-    //const VSS10Mags = JsonUtil.clone(item["57838f0b2459774a256959b2"]._props.Slots[7]._props.filters[0].Filter)
-    const m4a1Id = "5447a9cd7bac2dbg248b4561";
+    const m4a1Id = "5447a9cd4bdc2dbd208b4567";
     const mk9clone = "SREBRNA_CMMG_MK9_9x39_ASSAULT_RIFLE";
     const mk9260 = "SREBRNA_mk9_260";
     const mk9370 = "SREBRNA_mk9_370";
@@ -26,7 +23,7 @@ module.exports.Mk9x39 = () => {
 
 
     const NewBarrelPrefabPath = "";
-    const NewBarrelCategory = "Assaultrifles";
+    const NewBarrelCategory = "Assaultrifle";
     const NewBarrelTrader = "Peacekeeper";
     const NewBarrelTraderLoyalty = 1;
     const NewBarrelCurrency = "RUB";
@@ -45,26 +42,29 @@ module.exports.Mk9x39 = () => {
     KaijuApi.NewItemClone("5d440b9fa4b93601354d480c", mk920in, NewBarrelPrefabPath, NewBarrelCategory, NewBarrelTrader, NewBarrelTraderLoyalty, mk9BarrelsPrice[5], NewBarrelCurrency, NewBarrelDesc20in);
 
     const ItemID = m4a1Id;
-    const NewItemID = mk9clone;
-    const NewItemPrefabPath = "MUTANT/weapon_colt_m4a1_556x45_container.bundle";
+    const NewItemID = "SREBRNA_CMMG_MK9_9x39_ASSAULT_RIFLE";
+    const NewItemPrefabPath = "";
     const NewItemCategory = "Assaultrifles";
     const NewItemTrader = "Peacekeeper";
     const NewItemTraderLoyalty = 1;
-    const NewItemPrice = "19488";
+    const NewItemPrice = "27482";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["CMMG MK9 Mutant 9x39 Assault Rifle","CMMG MK9","temp description"];
+    const NewItemDesc = ["CMMG MK9 Mutant 9x39 Assault Rifle","CMMG MK9","A CMMG Mutant MK47 chambered in 9x39, accepts VSS and SR3M magazines."];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
-
+    DatabaseServer.tables.globals.config.Mastering[0].Templates.push(NewItemID);
     item[mk9clone]._props.Chambers[0]._props.filters[0].Filter = [];
-    item[mk9clone]._props.Slots[1]._props.filters[0].Filter = [];
-    item[mk9clone]._props.RecoilForceUp = 145;
-    item[mk9clone]._props.RecoilForceBack = 318;
+    item[mk9clone]._props.RecoilForceUp = 185;
+    item[mk9clone]._props.RecoilForceBack = 435;
     item[mk9clone]._props.ammoCaliber = "Caliber9x39";
     item[mk9clone]._props.weapFireType = [];
     item[mk9clone]._props.weapFireType.push("single");
     item[mk9clone]._props.weapFireType.push("fullauto");
-    DatabaseServer.tables.globals.config.Mastering[0].Templates.push(mk9clone);
+    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push("57838f0b2459774a256959b2");
+    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push("57838f9f2459774a150289a0");
+    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push("5a9e81fba2750c00164f6b11");
+    item[mk9clone]._props.ItemSound = ("weap_ar");
+
 
 
     for (const upper of ARUppers) {
@@ -127,22 +127,12 @@ module.exports.Mk9x39 = () => {
     }
 
     for (const count of arBarelsArray){
-        item[mk47clone]._props.ConflictingItems.push(count)
+        item[mk9clone]._props.ConflictingItems.push(count)
     }
 
     for (const round of VSSAMMO) {  //Adding 9x39 to chamber
-        item[mk47clone]._props.Chambers[0]._props.filters[0].Filter.push(round);
+        item[mk9clone]._props.Chambers[0]._props.filters[0].Filter.push(round);
     }
-
-    //for (const mag of VSS10Mags) {  //Adding VSS 10 Mags to mod_magazine
-    //    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
-    //}
-    //for (const mag of VSS20Mags) {  //Adding VSS 20 Mags to mod_magazine
-    //    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
-    //}
-    //for (const mag of SR3MMags) {  //Adding SR3M Mags to mod_magazine
-    //    item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(mag);
-   //}
 
     const CMMGMDArr =[
         "5d026791d7ad1a04a067ea63", //Fortis Red Brake 7.62x51 muzzle brake for AR-10
