@@ -2,7 +2,17 @@
   "Weapon": {
     "Mk9x39": true,
     "SKS9x39": true,
-    "APS9x39": false
+    "APS9x39": false,
+    "SR-39MP": false
+  },
+  "Magazine": {
+    "GL39": true
+  },
+  "Ammo": {
+    "SP4": true
+  },
+  "ModCompatablility": {
+    "AdvancedModding": true
   },
   "Debug": {
     "Enable": false

@@ -3,8 +3,12 @@
 const { Mk9x39 } = require("./Mk9x39.js");
 const { SKS9x39 } = require("./SKS9x39.js");
 const { APS9x39 } = require("./APS9x39.js");
+const { SR39MP } = require("./SR-39MP.js");
+const { SR39MPMag } = require("./SR-39MPMag.js");
 const {APS9x39MAG12} = require("./APS9x39MAG12");
 const {SKS9x39MAG7} = require("./SKS9x39MAG7");
+const {mag9x39GL39} = require("./9x39GL39");
+const {SP4} = require("./SP4");
 const conf = require("../config/config.json");
 const pack = require("../package.json");
 const KaijuApi = require("../../Kaiju-api/api");
@@ -34,6 +38,17 @@ class project_9x39{
                 if (conf.Weapon["APS9x39"]) {
                     APS9x39();
                     APS9x39MAG12();
+                }
+                if (conf.Weapon["SR-39MP"]) {
+                    SR39MP();
+                    SR39MPMag();
+                }
+                //// Magazine ////
+                if (conf.Magazine["GL39"]) {
+                    mag9x39GL39();
+                }
+                if (conf.Ammo["SP4"]) {
+                    SP4();
                 }
 
                 KaijuApi.DebugMessage(`----------${pack.author}: ${pack.name}: ${pack.version} Debug End----------`);

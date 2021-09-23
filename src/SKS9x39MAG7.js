@@ -12,9 +12,9 @@ module.exports.SKS9x39MAG7 = () => {
     const NewItemPrefabPath = "assets/content/items/mods/magazines/mag_sks_toz_std_internal_762x39_10.bundle";
     const NewItemCategory = "Magazines";
     const NewItemTrader = "Peacekeeper";
-    const NewItemTraderLoyalty = 1;
-    const NewItemPrice = "4219";
-    const NewItemCurrency = "RUB";
+    const NewItemTraderLoyalty = 2;
+    const NewItemPrice = "28";
+    const NewItemCurrency = "USD";
     const NewItemDesc = ["SKS9x39 7 Round Mag", "SKS9x39 7R", "7 round interal magazine for the SKS-9x39"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
