@@ -46,7 +46,7 @@ module.exports.Mk9x39 = () => {
     const NewItemPrefabPath = "";
     const NewItemCategory = "Assaultrifles";
     const NewItemTrader = "Peacekeeper";
-    const NewItemTraderLoyalty = 1;
+    const NewItemTraderLoyalty = 2;
     const NewItemPrice = "27482";
     const NewItemCurrency = "RUB";
     const NewItemDesc = ["CMMG MK9 Mutant 9x39 Assault Rifle","CMMG MK9","A CMMG Mutant MK47 chambered in 9x39, accepts VSS and SR3M magazines."];
