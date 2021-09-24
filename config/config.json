@@ -6,7 +6,11 @@
     "SR-39MP": false
   },
   "Magazine": {
-    "GL39": true
+    "GL39": true,
+    "PMAG": true
+  },
+  "Caliber": {
+    "9x51mm": true
   },
   "Ammo": {
     "SP4": true

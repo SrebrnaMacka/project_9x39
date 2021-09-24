@@ -15,7 +15,7 @@ module.exports.SKS9x39 = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "463";
     const NewItemCurrency = "USD";
-    const NewItemDesc = ["SKS 9x39 Assault Carbine 9x39", "SKS 9x39", "A OP-SKS chambered in 9x39mm, accepts a 7 round internal magazine, which supports top loading, VSS, and SR3M magazines."];
+    const NewItemDesc = ["SKS 9x39 Assault Carbine 9x39", "SKS 9x39", "A OP-SKS chambered in 9x39mm and 9x51mm, accepts a 7 round internal magazine, which supports top loading, VSS, and SR3M magazines."];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
     database.globals.config.Mastering[0].Templates.push(NewItemID);

@@ -8,7 +8,12 @@ const { SR39MPMag } = require("./SR-39MPMag.js");
 const {APS9x39MAG12} = require("./APS9x39MAG12");
 const {SKS9x39MAG7} = require("./SKS9x39MAG7");
 const {mag9x39GL39} = require("./9x39GL39");
+const {mag9x39PMAG} = require("./9x39PMAG");
 const {SP4} = require("./SP4");
+const {SP59x51} = require("./9x51SP5");
+const {SP69x51} = require("./9x51SP6");
+const {SPP9x51} = require("./9x51SPP");
+const {BP9x51} = require("./9x51BP");
 const conf = require("../config/config.json");
 const pack = require("../package.json");
 const KaijuApi = require("../../Kaiju-api/api");
@@ -46,6 +51,15 @@ class project_9x39{
                 //// Magazine ////
                 if (conf.Magazine["GL39"]) {
                     mag9x39GL39();
+                }
+                if (conf.Magazine["PMAG"]) {
+                    mag9x39PMAG();
+                }
+                if (conf.Caliber["9x51mm"]) {
+                    SP59x51();
+                    SP69x51();
+                    SPP9x51();
+                    BP9x51();
                 }
                 if (conf.Ammo["SP4"]) {
                     SP4();

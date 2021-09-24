@@ -1,14 +1,6 @@
 "use strict";
 const KaijuApi = require("../../Kaiju-api/api");
 const conf = require("../config/config.json");
-const {SKS9x39} = require("./SKS9x39.js");
-const {SKS9x39MAG7} = require("./SKS9x39MAG7");
-const {APS9x39} = require("./APS9x39.js");
-const {APS9x39MAG12} = require("./APS9x39MAG12");
-const {SR39MP} = require("./SR-39MP.js");
-const {SR39MPMag} = require("./SR-39MPMag.js");
-const {mag9x39GL39} = require("./9x39GL39");
-const {Mk9x39} = require("./Mk9x39.js");
 module.exports.SP4 = () => {
     const database = DatabaseServer.tables;
     const item = database.templates.items;
