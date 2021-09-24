@@ -23,8 +23,8 @@ module.exports.SP69x51 = () => {
     item[sp69x51clone]._props.InitialSpeed = 376;
     item[sp69x51clone]._props.ArmorDamage = 74;
     item[sp69x51clone]._props.casingMass = 20;
-    item[spp9x51clone]._props.ammoRec = 0.25;
-    item[spp9x51clone]._props.Weight = 0.028;
+    item[sp69x51clone]._props.ammoRec = 0.25;
+    item[sp69x51clone]._props.Weight = 0.028;
     item[sp69x51clone]._props.Caliber = "Caliber9x51";
 
     DatabaseServer.tables.templates.items["57c44b372459772d2b39b8ce"]._props.Chambers[0]._props.filters[0].Filter.push(sp69x51clone);
