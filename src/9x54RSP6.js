@@ -10,7 +10,7 @@ module.exports.SP69x54R = () => {
     const NewItemID = "SREBRNA_9x54R_SP6";
     const NewItemPrefabPath = "assets/content/items/ammo/patrons/patron_762x54r_7bt1.bundle";
     const NewItemCategory = "Ammunition";
-    const NewItemTrader = "Jaeger";
+    const NewItemTrader = "Skier";
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "530";
     const NewItemCurrency = "RUB";
@@ -26,11 +26,9 @@ module.exports.SP69x54R = () => {
     item[sp69x54Rclone]._props.Weight = 0.035;
     item[sp69x54Rclone]._props.Caliber = "Caliber9x54R";
 
-    if (conf.Weapon["VPO-9x51"]){
-        DatabaseServer.tables.templates.items["SREBRNA_VPO9x51_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(sp69x54Rclone);
-        DatabaseServer.tables.templates.items["SREBRNA_9x51_VPO_MAG"]._props.Cartridges[0]._props.filters[0].Filter.push(sp69x54Rclone);
-        DatabaseServer.tables.templates.items["SREBRNA_9x51_VPO_MAG2"]._props.Cartridges[0]._props.filters[0].Filter.push(sp69x54Rclone);
-        DatabaseServer.tables.templates.items["SREBRNA_9x51_VPO_MAG3"]._props.Cartridges[0]._props.filters[0].Filter.push(sp69x54Rclone);
+    if (conf.Weapon["M9x54"]){
+        DatabaseServer.tables.templates.items["SREBRNA_M9x54_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(sp69x54Rclone);
+        DatabaseServer.tables.templates.items["SREBRNA_M9x54_MAG"]._props.Cartridges[0]._props.filters[0].Filter.push(sp69x54Rclone);
     }
     if (conf.Weapon["AKR9"]){
         DatabaseServer.tables.templates.items["SREBRNA_AKR9_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(sp69x54Rclone);

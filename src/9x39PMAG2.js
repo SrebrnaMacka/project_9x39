@@ -17,7 +17,7 @@ module.exports.mag9x39PMAG2 = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "350";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["PMAG2 9x39mm/9x51mm 50 Round Magazine", "PMAG2", "A 30 round magazine for 9x39mm/9x51mm caliber rifles and carbines"];
+    const NewItemDesc = ["Srenrna PMAG2 9x39mm 30 Round Magazine", "PMAG2", "A 30 round magazine for 9x39mm caliber rifles and carbines"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
 

@@ -2,15 +2,15 @@
 //// Weapon ////
 const { Mk9x39 } = require("./Mk9x39.js");
 const { SKS9x39 } = require("./SKS9x39.js");
-const { APS9x39 } = require("./APS9x39.js");
+const { MP9x39 } = require("./MP9x39.js");
 const { SR39MP } = require("./SR-39MP.js");
-const { VPO9x51 } = require("./VPO-9x51.js");
+const { M9x54 } = require("./M9x54.js");
 const { AKR9 } = require("./AK-9x54R.js");
 const { AKR9S } = require("./AK-9x54RS.js");
 const { AKRKometa } = require("./AK-354Kometa.js");
 //// Magazine ////
 const { SR39MPMag } = require("./SR-39MPMag.js");
-const {APS9x39MAG12} = require("./APS9x39MAG12");
+const {MP9x39MAG24} = require("./MP9x39MAG24");
 const {SKS9x39MAG7} = require("./SKS9x39MAG7");
 const {mag9x39GL39} = require("./9x39GL39");
 const {mag9x39PMAG} = require("./9x39PMAG");
@@ -19,9 +19,7 @@ const {mag9x51FAL10} = require("./FAL-9x51-10Rd");
 const {mag9x51FAL20} = require("./FAL-9x51-20Rd");
 const {mag9x51FAL30} = require("./FAL-L1A19x51-30Rd");
 const {mag9x51FAL50} = require("./FAL-9x51-50Rd");
-const {mag9x51VPO} = require("./VPO-9x51MAG");
-const {mag9x51VPO2} = require("./VPO-9x51MAG2");
-const {mag9x51VPO3} = require("./VPO-9x51MAG3");
+const {magM9x54} = require("./M9x54Mag");
 const {mag9x54RSVD} = require("./SVD-9x54R-20R");
 const {mag9x70} = require("./354KometaMag");
 //// Mods ////
@@ -64,9 +62,9 @@ class project_9x39{
                     SKS9x39();
                     SKS9x39MAG7();
                 }
-                if (conf.Weapon["APS9x39"]) {
-                    APS9x39();
-                    APS9x39MAG12();
+                if (conf.Weapon["MP9x39"]) {
+                    MP9x39();
+                    MP9x39MAG24();
                 }
                 if (conf.Weapon["SR-39MP"]) {
                     SR39MP();
@@ -81,11 +79,9 @@ class project_9x39{
                 if (conf.Weapon["AKRKometa"]) {
                     AKRKometa();
                 }
-                if (conf.Weapon["VPO-9x51"]) {
-                    VPO9x51();
-                    mag9x51VPO();
-                    mag9x51VPO2();
-                    mag9x51VPO3();
+                if (conf.Weapon["M9x54"]) {
+                    M9x54();
+                    magM9x54();
                 }
                 //// Magazine ////
                 if (conf.Magazine["GL39"]) {

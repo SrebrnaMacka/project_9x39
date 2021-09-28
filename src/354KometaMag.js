@@ -16,7 +16,7 @@ module.exports.mag9x70 = () => {
     const NewItemTraderLoyalty = 3;
     const NewItemPrice = "1720";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = [".354 Kometa 10 Round Magazine", ".354 Kometa 10R", "temp"];
+    const NewItemDesc = ["Srebrna .354 Kometa 10 Round Magazine", ".354 Kometa 10R", "temp"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
 

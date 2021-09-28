@@ -10,7 +10,7 @@ module.exports.SR39MP = () => {
     const ItemID = apsId;
     const NewItemID = "SREBRNA_SR-39MP_9x39_Handgun";
     const NewItemPrefabPath = "";
-    const NewItemCategory = "Handgun";
+    const NewItemCategory = "Handguns";
     const NewItemTrader = "Prapor";
     const NewItemTraderLoyalty = 1;
     const NewItemPrice = "45074";

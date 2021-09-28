@@ -15,7 +15,7 @@ module.exports.SKS9x39MAG7 = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "180";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["SKS 9x39mm/9x51mm 7 Round Mag", "SKS 9x39mm 7R", "7 round interal magazine for the SKS-9x39"];
+    const NewItemDesc = ["Srebrna SKS 9x39mm/9x54mm 7 Round Mag", "SKS 9x39mm 7R", "7 round interal magazine for the SKS-9x39"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
 

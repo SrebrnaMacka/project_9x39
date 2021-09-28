@@ -14,7 +14,7 @@ module.exports.AKRKometa = () => {
     const NewItemTraderLoyalty = 3;
     const NewItemPrice = "105701";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["AKR .354 Kometa Rifle 9x70mm", "AKR .354 Kometa", "A AKM chambered in 9x70mm"];
+    const NewItemDesc = ["Srebrna AKR .354 Kometa Marksman Rifle", "AKR .354 Kometa", "A AKM chambered in 9x70mm"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
     database.globals.config.Mastering[0].Templates.push(NewItemID);

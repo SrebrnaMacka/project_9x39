@@ -49,7 +49,7 @@ module.exports.Mk9x39 = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "218";
     const NewItemCurrency = "USD";
-    const NewItemDesc = ["CMMG MK9 Mutant 9x39mm Assault Rifle","CMMG MK9","A CMMG Mutant MK47 chambered in 9x39mm"];
+    const NewItemDesc = ["Srebrna MK9 Mutant 9x39mm Assault Rifle","SBRN MK9","A CMMG Mutant MK47 chambered in 9x39mm"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
     DatabaseServer.tables.globals.config.Mastering[0].Templates.push(NewItemID);

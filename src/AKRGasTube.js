@@ -15,13 +15,13 @@ module.exports.gasAKR = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "18701";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["AKR Gas Tube", "AKR Gas Tube", "A AKR Gas Tube"];
+    const NewItemDesc = ["Srebrna AKR Gas Tube", "AKR Gas Tube", "A AKR Gas Tube"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
     item[akrGasclone]._props.Recoil = -7;
     item[akrGasclone]._props.Accuracy = 6;
-    item[akrGasclone]._props.Loudness = 15;
-    item[akrGasclone]._props.Velocity = 8;
+    item[akrGasclone]._props.Loudness = 20;
+    item[akrGasclone]._props.Velocity = 6;
 
     //item["SREBRNA_AKRKometa_WEAPON"]._props.Slots[0]._props.filters[0].Filter.push(akrGasclone);
     //KaijuApi.DebugMessage(`${NewItemID} added to ${"SREBRNA_AKRKometa_WEAPON"}`);

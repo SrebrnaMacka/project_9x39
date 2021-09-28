@@ -15,7 +15,7 @@ module.exports.SKS9x39 = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "46301";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["SKS 9x39 Assault Carbine 9x39", "SKS 9x39", "A OP-SKS chambered in 9x39mm"];
+    const NewItemDesc = ["Srebrna SKS 9x39 Assault Carbine 9x39", "SKS 9x39", "A OP-SKS chambered in 9x39mm"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
     database.globals.config.Mastering[0].Templates.push(NewItemID);

@@ -10,11 +10,11 @@ module.exports.mag9x54RSVD = () => {
     const NewItemID = SVDMAGID;
     const NewItemPrefabPath = "assets/content/items/mods/magazines/mag_svd_izhmash_svd_std_762x54_20.bundle";
     const NewItemCategory = "Magazines";
-    const NewItemTrader = "Prapor";
+    const NewItemTrader = "Skier";
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "627";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["SVD-9x54R 30R", "SVD-9x54R 30R", "temp"];
+    const NewItemDesc = ["Srebrna SVD-9x54R 30R", "SVD-9x54R 30R", "temp"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
 

@@ -37,9 +37,9 @@ module.exports.SP4 = () => {
         DatabaseServer.tables.templates.items["SREBRNA_SKS9x39_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(sp4clone);
         DatabaseServer.tables.templates.items["SREBRNA_SKS9x39_MAG"]._props.Cartridges[0]._props.filters[0].Filter.push(sp4clone);
     }
-    if (conf.Weapon["APS9x39"]) {
-        DatabaseServer.tables.templates.items["SREBRNA_APS9x39_9x39_Handgun"]._props.Chambers[0]._props.filters[0].Filter.push(sp4clone);
-        DatabaseServer.tables.templates.items["SREBRNA_APS9x39_MAG"]._props.Cartridges[0]._props.filters[0].Filter.push(sp4clone);
+    if (conf.Weapon["MP9x39"]) {
+        DatabaseServer.tables.templates.items["SREBRNA_MP9x39_9x39_Smg"]._props.Chambers[0]._props.filters[0].Filter.push(sp4clone);
+        DatabaseServer.tables.templates.items["SREBRNA_MP9x39_MAG"]._props.Cartridges[0]._props.filters[0].Filter.push(sp4clone);
     }
     if (conf.Weapon["SR-39MP"]) {
         DatabaseServer.tables.templates.items["SREBRNA_SR-39MP_9x39_Handgun"]._props.Chambers[0]._props.filters[0].Filter.push(sp4clone);

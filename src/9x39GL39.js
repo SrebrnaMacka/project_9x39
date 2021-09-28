@@ -17,7 +17,7 @@ module.exports.mag9x39GL39 = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "620";
     const NewItemCurrency = "RUB";
-    const NewItemDesc = ["GL39 9x39mm 50 Round Magazine", "GL39", "A 50 round magazine for 9x39mm rifles and carbines"];
+    const NewItemDesc = ["Srebrna GL39 9x39mm 50 Round Magazine", "GL39", "A 50 round magazine for 9x39mm rifles and carbines"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
 
