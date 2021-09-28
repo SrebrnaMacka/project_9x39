@@ -3,14 +3,24 @@
     "Mk9x39": true,
     "SKS9x39": true,
     "APS9x39": false,
-    "SR-39MP": false
+    "SR-39MP": true,
+    "VPO-9x51": true,
+    "AKR9": true,
+    "AKR9S": true,
+    "AKRKometa": true
   },
   "Magazine": {
     "GL39": true,
-    "PMAG": true
+    "PMAG": true,
+    "FALMAGS": false
+  },
+  "Mods": {
+    "GASAKR": true
   },
   "Caliber": {
-    "9x51mm": true
+    "9x51mm": true,
+    "9x54R": true,
+    "354Kometa": true
   },
   "Ammo": {
     "SP4": true

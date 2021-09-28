@@ -13,11 +13,11 @@ module.exports.mag9x39GL39 = () => {
     const NewItemID = GL39MAGID;
     const NewItemPrefabPath = "assets/content/items/mods/magazines/mag_ak74_izhmash_6l31_545x39_60.bundle";
     const NewItemCategory = "Magazines";
-    const NewItemTrader = "Peacekeeper";
+    const NewItemTrader = "Prapor";
     const NewItemTraderLoyalty = 2;
-    const NewItemPrice = "162";
-    const NewItemCurrency = "USD";
-    const NewItemDesc = ["GL39 9x39mm/9x51mm 50 Round Magazine", "GL39", "A 50 round magazine for 9x39mm/9x51 caliber rifles and carbines"];
+    const NewItemPrice = "620";
+    const NewItemCurrency = "RUB";
+    const NewItemDesc = ["GL39 9x39mm 50 Round Magazine", "GL39", "A 50 round magazine for 9x39mm rifles and carbines"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
 
@@ -28,6 +28,10 @@ module.exports.mag9x39GL39 = () => {
     }
 
     item[GL39MAGID]._props.Cartridges[0]._max_count = 50;
+    item["57838ad32459774a17445cd2"]._props.Slots[1]._props.filters[0].Filter.push(GL39MAGID);
+    KaijuApi.DebugMessage(`${NewItemID} added to ${"57838ad32459774a17445cd2"}`);
+    item["57c44b372459772d2b39b8ce"]._props.Slots[2]._props.filters[0].Filter.push(GL39MAGID);
+    KaijuApi.DebugMessage(`${NewItemID} added to ${"57c44b372459772d2b39b8ce"}`);
     item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push(GL39MAGID);
     KaijuApi.DebugMessage(`${NewItemID} added to ${mk9clone}`);
     item[sks9x39clone]._props.Slots[2]._props.filters[0].Filter.push(GL39MAGID);

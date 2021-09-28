@@ -10,10 +10,10 @@ module.exports.SP4 = () => {
     const NewItemID = "SREBRNA_9x39_SP4";
     const NewItemPrefabPath = "";
     const NewItemCategory = "Ammunition";
-    const NewItemTrader = "Peacekeeper";
+    const NewItemTrader = "Prapor";
     const NewItemTraderLoyalty = 1;
-    const NewItemPrice = "1";
-    const NewItemCurrency = "USD";
+    const NewItemPrice = "187";
+    const NewItemCurrency = "RUB";
     const NewItemDesc = ["9x39mm SP4 gs","SP4 gs","A budget 9x39 round"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
@@ -47,6 +47,10 @@ module.exports.SP4 = () => {
     }
     if (conf.Magazine["GL39"]) {
         DatabaseServer.tables.templates.items["SREBRNA_9x39_GL39"]._props.Cartridges[0]._props.filters[0].Filter.push(sp4clone);
+    }
+    if (conf.Magazine["PMAG"]) {
+        DatabaseServer.tables.templates.items["SREBRNA_9x39_PMAG"]._props.Cartridges[0]._props.filters[0].Filter.push(sp4clone);
+        DatabaseServer.tables.templates.items["SREBRNA_9x39_PMAG2"]._props.Cartridges[0]._props.filters[0].Filter.push(sp4clone);
     }
     if (conf.ModCompatablility["AdvancedModding"]) {
         DatabaseServer.tables.templates.items["KAIJU_AK9_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(sp4clone);

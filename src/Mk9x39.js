@@ -14,7 +14,7 @@ module.exports.Mk9x39 = () => {
     const mk918in = "SREBRNA_mk9_18in";
     const mk920in = "SREBRNA_mk9_20in";
     const mk9Barrels = [mk9260,mk9370,mk9406,mk9165in,mk918in,mk920in]
-    const mk9BarrelsPrice = ["25612","28124","31052","34212","38201","42315"]
+    const mk9BarrelsPrice = ["256","281","310","342","382","423"]
     const arBarelsArray = ["55d35ee94bdc2d61338b4568","55d3632e4bdc2d972f8b4569",
         "5c0e2f94d174af029f650d56","5d440b93a4b9364276578d4b",
         "5d440b9fa4b93601354d480c","5c6d85e02e22165df16b81f4",
@@ -26,7 +26,7 @@ module.exports.Mk9x39 = () => {
     const NewBarrelCategory = "Assaultrifle";
     const NewBarrelTrader = "Peacekeeper";
     const NewBarrelTraderLoyalty = 1;
-    const NewBarrelCurrency = "RUB";
+    const NewBarrelCurrency = "USD";
     const NewBarrelDesc260 = ["260mm barrel for MK9 Mutant 9x39 Assault Rifle","260mm MK9","260mm barrel for MK9 Mutant 9x39 Assault Rifle."];
     const NewBarrelDesc370 = ["370mm barrel for MK9 Mutant 9x39 Assault Rifle","370mm MK9","370mm barrel for MK9 Mutant 9x39 Assault Rifle."];
     const NewBarrelDesc406 = ["406mm barrel for MK9 Mutant 9x39 Assault Rifle","406mm MK9","406mm barrel for MK9 Mutant 9x39 Assault Rifle."];
@@ -49,7 +49,7 @@ module.exports.Mk9x39 = () => {
     const NewItemTraderLoyalty = 2;
     const NewItemPrice = "218";
     const NewItemCurrency = "USD";
-    const NewItemDesc = ["CMMG MK9 Mutant 9x39 Assault Rifle","CMMG MK9","A CMMG Mutant MK47 chambered in 9x39mm and 9x51mm, accepts VSS and SR3M magazines."];
+    const NewItemDesc = ["CMMG MK9 Mutant 9x39mm Assault Rifle","CMMG MK9","A CMMG Mutant MK47 chambered in 9x39mm"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
     DatabaseServer.tables.globals.config.Mastering[0].Templates.push(NewItemID);
@@ -60,6 +60,7 @@ module.exports.Mk9x39 = () => {
     item[mk9clone]._props.weapFireType = [];
     item[mk9clone]._props.weapFireType.push("single");
     item[mk9clone]._props.weapFireType.push("fullauto");
+    item[mk9clone]._props.bFirerate = 900;
     item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push("57838f0b2459774a256959b2");
     item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push("57838f9f2459774a150289a0");
     item[mk9clone]._props.Slots[1]._props.filters[0].Filter.push("5a9e81fba2750c00164f6b11");

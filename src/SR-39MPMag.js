@@ -11,10 +11,10 @@ module.exports.SR39MPMag = () => {
     const NewItemID = "SREBRNA_SR-39MP_MAG";
     const NewItemPrefabPath = "";
     const NewItemCategory = "Magazines";
-    const NewItemTrader = "Peacekeeper";
+    const NewItemTrader = "Prapor";
     const NewItemTraderLoyalty = 1;
-    const NewItemPrice = "30";
-    const NewItemCurrency = "USD";
+    const NewItemPrice = "198";
+    const NewItemCurrency = "RUB";
     const NewItemDesc = ["SR-39MP 9x39mm","SR-39MP Mag","A 14 round magazine for the SR-39MP"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);

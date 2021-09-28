@@ -6,46 +6,47 @@ module.exports.SPP9x51 = () => {
     const item = database.templates.items;
     const spp9x51clone = "SREBRNA_9x51_SPP";
 
-    const ItemID = "5c0d668f86f7747ccb7f13b2";
+    const ItemID = "5a6086ea4f39f99cd479502f";
     const NewItemID = "SREBRNA_9x51_SPP";
-    const NewItemPrefabPath = "";
+    const NewItemPrefabPath = "assets/content/items/ammo/patrons/patron_762x51_m61.bundle";
     const NewItemCategory = "Ammunition";
-    const NewItemTrader = "Peacekeeper";
+    const NewItemTrader = "Prapor";
     const NewItemTraderLoyalty = 3;
-    const NewItemPrice = "4";
-    const NewItemCurrency = "USD";
-    const NewItemDesc = ["9x51mm SPP gs","SPP gs","9x51"];
+    const NewItemPrice = "446";
+    const NewItemCurrency = "RUB";
+    const NewItemDesc = ["9x51mm SPP gzh","SPP gzh","9x51"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
 
-    item[spp9x51clone]._props.PenetrationPower = 61;
-    item[spp9x51clone]._props.Damage = 79;
-    item[spp9x51clone]._props.InitialSpeed = 382;
-    item[spp9x51clone]._props.ArmorDamage = 69;
-    item[spp9x51clone]._props.ammoRec = 0.25;
-    item[spp9x51clone]._props.casingMass = 20;
-    item[spp9x51clone]._props.Weight = 0.028;
+    item[spp9x51clone]._props.PenetrationPower = 58;
+    item[spp9x51clone]._props.Damage = 76;
+    item[spp9x51clone]._props.InitialSpeed = 672;
+    item[spp9x51clone]._props.ArmorDamage = 66;
+    item[spp9x51clone]._props.ammoRec = 15;
+    item[spp9x51clone]._props.Weight = 0.032;
     item[spp9x51clone]._props.Caliber = "Caliber9x51";
 
-    DatabaseServer.tables.templates.items["57c44b372459772d2b39b8ce"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
-    DatabaseServer.tables.templates.items["57838ad32459774a17445cd2"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
-
-    if (conf.Weapon["Mk9x39"]) {
-        DatabaseServer.tables.templates.items["SREBRNA_CMMG_MK9_9x39_ASSAULT_RIFLE"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
+    if (conf.Weapon["VPO-9x51"]){
+        DatabaseServer.tables.templates.items["SREBRNA_VPO9x51_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["SREBRNA_9x51_VPO_MAG"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["SREBRNA_9x51_VPO_MAG2"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["SREBRNA_9x51_VPO_MAG3"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
     }
-    if (conf.Weapon["SKS9x39"]) {
-        DatabaseServer.tables.templates.items["SREBRNA_SKS9x39_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
-        DatabaseServer.tables.templates.items["SREBRNA_SKS9x39_MAG"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+    if (conf.Weapon["AKR9"]){
+        DatabaseServer.tables.templates.items["SREBRNA_AKR9_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
     }
-    if (conf.Magazine["GL39"]) {
-        DatabaseServer.tables.templates.items["SREBRNA_9x39_GL39"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+    if (conf.Weapon["AKR9S"]){
+        DatabaseServer.tables.templates.items["SREBRNA_AKR9S_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
     }
-    if (conf.Magazine["PMAG"]) {
-        DatabaseServer.tables.templates.items["SREBRNA_9x39_PMAG"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+    if (conf.Caliber["9x51mm"]) {
+        DatabaseServer.tables.templates.items["5f2a9575926fd9352339381f"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["5dcbd56fdbd3d91b3e5468d5"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["5b0bbe4e5acfc40dc528a72d"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
     }
-    if (conf.ModCompatablility["AdvancedModding"]) {
-        DatabaseServer.tables.templates.items["KAIJU_AK9_WEAPON"]._props.Chambers[0]._props.filters[0].Filter.push(spp9x51clone);
+    if (conf.Magazine["FALMAGS"]){
+        DatabaseServer.tables.templates.items["SREBRNA_FAL9x51_MAG10"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["SREBRNA_FAL9x51_MAG20"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["SREBRNA_FAL9x51_MAG30"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
+        DatabaseServer.tables.templates.items["SREBRNA_FAL9x51_MAG50"]._props.Cartridges[0]._props.filters[0].Filter.push(spp9x51clone);
     }
-
-
 }

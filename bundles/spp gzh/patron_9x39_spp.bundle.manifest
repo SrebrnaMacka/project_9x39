@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 2544034765
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: ad934e25433ad99d9c13eaa3e0f32e45
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c8c8b738aa80b5ac7a89fbbd62575ffa
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 64
+  Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 53d902b22357f5346a9108f9f35a77ba, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2ab6f855dc374ab42883389c34cfb628, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 134
+  Script: {instanceID: 0}
+- Class: 205
+  Script: {instanceID: 0}
+Assets:
+- Assets/Content/Items/ammo/Patrons/patron_9x39_spp.prefab
+Dependencies:
+- C:/TeamCity/BuildAgent/work/eft-repo/client/StreamingAssets/Windows/shaders
+- C:/TeamCity/BuildAgent/work/eft-repo/client/StreamingAssets/Windows/cubemaps
+- C:/TeamCity/BuildAgent/work/eft-repo/client/StreamingAssets/Windows/assets/commonassets/physics/physicsmaterials.bundle

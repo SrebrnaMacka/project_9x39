@@ -11,10 +11,10 @@ module.exports.APS9x39 = () => {
     const NewItemID = "SREBRNA_APS9x39_9x39_Handgun";
     const NewItemPrefabPath = "";
     const NewItemCategory = "Handgun";
-    const NewItemTrader = "Peacekeeper";
+    const NewItemTrader = "Prapor";
     const NewItemTraderLoyalty = 1;
-    const NewItemPrice = "182";
-    const NewItemCurrency = "USD";
+    const NewItemPrice = "12200";
+    const NewItemCurrency = "RUB";
     const NewItemDesc = ["APS 9x39 Handgun 9x39","APS 9x39","A APS chambered in 9x39mm"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);

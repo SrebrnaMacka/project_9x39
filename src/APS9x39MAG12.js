@@ -11,10 +11,10 @@ module.exports.APS9x39MAG12 = () => {
     const NewItemID = "SREBRNA_APS9x39_MAG";
     const NewItemPrefabPath = "assets/content/items/mods/magazines/mag_aps_molot_aps_apb_std_9x18pm_20.bundle";
     const NewItemCategory = "Magazines";
-    const NewItemTrader = "Peacekeeper";
+    const NewItemTrader = "Prapor";
     const NewItemTraderLoyalty = 1;
-    const NewItemPrice = "23";
-    const NewItemCurrency = "USD";
+    const NewItemPrice = "123";
+    const NewItemCurrency = "RUB";
     const NewItemDesc = ["APS 9x39 12 Round Magazine","APS 9x39 Mag","A 12 round magazine for the APS 9x39"];
 
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
