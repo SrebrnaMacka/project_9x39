@@ -19,17 +19,19 @@ module.exports.AKR9 = () => {
     KaijuApi.NewItemClone(ItemID, NewItemID, NewItemPrefabPath, NewItemCategory, NewItemTrader, NewItemTraderLoyalty, NewItemPrice, NewItemCurrency, NewItemDesc);
     database.globals.config.Mastering[0].Templates.push(NewItemID);
     item[akr9clone]._props.Chambers[0]._props.filters[0].Filter = [];
-    item[akr9clone]._props.RecoilForceUp = 370;
-    item[akr9clone]._props.RecoilForceBack = 600;
+    item[akr9clone]._props.RecoilForceUp = 300;
+    item[akr9clone]._props.RecoilForceBack = 520;
     item[akr9clone]._props.ammoCaliber = "Caliber9x54R";
     item[akr9clone]._props.ItemSound = ("weap_dmr");
     item[akr9clone]._props.bEffDist = 800;
-    item[akr9clone]._props.bFirerate = 350;
+    item[akr9clone]._props.bFirerate = 500;
     item[akr9clone]._props.RecoilAngle = 90;
-    item[akr9clone]._props.CameraRecoil = 0.22;
-    item[akr9clone]._props.CameraSnap = 3.5;
+    item[akr9clone]._props.CameraRecoil = 0.20;
+    item[akr9clone]._props.CameraSnap = 3.4;
     item[akr9clone]._props.Velocity = 8.3;
     item[akr9clone]._props.weapFireType = [];
     item[akr9clone]._props.weapFireType.push("single");
-    item[akr9clone]._props.weapFireType.push("fullauto");
+
+    item[akr9clone]._props.Slots[6]._props.filters[0].Filter.push("5649b2314bdc2d79388b4576");
+    item[akr9clone]._props.Slots[6]._props.filters[0].Filter.push("5b04473a5acfc40018632f70");
 }

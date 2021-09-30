@@ -24,7 +24,7 @@ module.exports.mag9x70 = () => {
 
     item[KOMETAMAGID]._props.Cartridges[0]._max_count = 10;
     //item["SREBRNA_AKRKometa_WEAPON"]._props.Slots[7]._props.filters[0].Filter.push(KOMETAMAGID);
-    item["SREBRNA_AKRKometa_WEAPON"]._props.Slots[1]._props.filters[0].Filter.push(KOMETAMAGID);
+    item["SREBRNA_AKRKometa_WEAPON"]._props.Slots[2]._props.filters[0].Filter.push(KOMETAMAGID);
     //item["SREBRNA_AKRKometa_WEAPON"]._props.Slots[2]._props.filters[0].Filter.push(KOMETAMAGID);
     KaijuApi.DebugMessage(`${NewItemID} added to ${"SREBRNA_AKRKometa_WEAPON"}`);
 }
